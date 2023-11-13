@@ -1,0 +1,82 @@
+
+// layout palette
+$color-layout-primary:   #0a85be;
+$color-layout-primary-dark:   #0776b3;
+$color-layout-secondary: #03a9f4;
+$color-layout-highlight: #01c0c8;
+
+// colors for notifications and statuses
+$color-danger: #f62d51;
+$color-warn:   #ffb12e;
+$color-ok:     #9ece2f;
+$color-info:   #ab47bc;
+
+// background and foreground
+$color-foreground: #2f3c4a;
+$color-background: #e6eff6;
+$color-shadow:     #d5e1ef;
+$color-light-base: #fff;
+
+// fonts
+$color-font-primary:   #474866;
+$color-font-secondary: #6982a0;
+$color-font-dim:       #b0c2d6;
+
+// bootstrap colors
+$danger: $color-danger;
+$success: $color-ok;
+$warning: $color-warn;
+$primary: $color-layout-primary;
+$info: $color-info;
+$inverse: $color-foreground;
+$muted: $color-font-dim;
+$dark: $color-foreground;
+$light: $color-background;
+$bglight: rgba(0, 0, 0, 0.02);
+
+$danger-dark: darken($color-danger, 3%);
+$success-dark: darken($color-ok, 3%);
+$warning-dark: darken($color-warn, 3%);
+$primary-dark: darken($color-layout-primary, 3%);
+$info-dark: darken($color-info, 3%);
+$inverse-dark: darken($color-foreground, 3%);
+$dark-transparent:rgba(0, 0, 0, 0.05);
+
+$light-danger:  lighten($color-danger, 3%);
+$light-success: lighten($color-ok, 3%);
+$light-warning: lighten($color-warn, 3%);
+$light-primary: lighten($color-layout-primary, 3%);
+$light-info:    lighten($color-info, 3%);
+$light-inverse: lighten($color-background, 3%);
+$light-megna:   lighten($color-danger, 3%);
+
+// shadow
+$success-shadow:0 2px 2px 0 fade_out($success, .86), 0 3px 1px -2px fade_out($success, .98), 0 1px 5px 0 fade_out($success, .88);
+$success-shadow-hover:0 14px 26px -12px fade_out($success, .58), 0 4px 23px 0 rgba(0,0,0,.12), 0 8px 10px -5px fade_out($success, .98);
+
+$info-shadow: 0 2px 2px 0 fade_out($color-info, .86), 0 3px 1px -2px fade_out($color-info, .98), 0 1px 5px 0 fade_out($color-info, .88);
+$info-shadow-hover:0 14px 26px -12px fade_out($color-info, .58), 0 4px 23px 0 rgba(0,0,0,.12), 0 8px 10px -5px fade_out($color-info, .98);
+
+$warning-shadow:0 2px 2px 0 fade_out($color-warn, .86), 0 3px 1px -2px fade_out($color-warn, .98), 0 1px 5px 0 fade_out($color-warn, .88);
+$warning-shadow-hover:0 14px 26px -12px fade_out($color-warn, .58), 0 4px 23px 0 rgba(0,0,0,.12), 0 8px 10px -5px fade_out($color-warn, .98);
+
+$danger-shadow:0 2px 2px 0 fade_out($color-danger, .86), 0 3px 1px -2px fade_out($color-danger, .98), 0 1px 5px 0 fade_out($color-danger, .88);
+$danger-shadow-hover:0 14px 26px -12px fade_out($color-danger, .58), 0 4px 23px 0 rgba(0,0,0,.12), 0 8px 10px -5px fade_out($color-danger, .98);
+
+$primary-shadow:0 2px 2px 0 fade_out($color-layout-primary, .86), 0 3px 1px -2px fade_out($color-layout-primary, .98), 0 1px 5px 0 fade_out($color-layout-primary, .88);
+$primary-shadow-hover:0 14px 26px -12px fade_out($color-layout-primary, .58), 0 4px 23px 0 rgba(0,0,0,.12), 0 8px 10px -5px fade_out($color-layout-primary, .98);
+
+$default-shadow:0 2px 2px 0 fade_out($color-shadow, .86), 0 3px 1px -2px fade_out($color-shadow, .98), 0 1px 5px 0 fade_out($color-shadow, .88);
+$default-shadow-hover:0 14px 26px -12px fade_out($color-shadow, .58), 0 4px 23px 0 rgba(0,0,0,.12), 0 8px 10px -5px fade_out($color-shadow, .98);
+
+// temp
+$blue: $color-layout-secondary;
+$megna: $color-layout-highlight;
+
+$table-border: $color-background;
+$form-brd: $color-background;
+$border: rgba(120, 130, 140, 0.13);
+
+// bg images
+$login-bg: '../images/login/login-bg.png';
+$login-box-bg: '../images/login/login-box-bg.png';

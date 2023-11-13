@@ -1,0 +1,1036 @@
+
+/*******************
+/*General Elements
+*******************/
+// -- defined in bootstrap.vars
+//a.link:hover, a.link:focus {
+//    color: #1976d2 !important;
+//}
+
+.bg-theme {
+    background-color: $color-layout-primary !important;
+}
+
+//.pagination > .active > a,
+//.pagination > .active > span,
+//.pagination > .active > a:hover,
+//.pagination > .active > span:hover,
+//.pagination > .active > a:focus,
+//.pagination > .active > span:focus {
+//    background-color: #1976d2;
+//    border-color: #1976d2;
+//}
+
+.right-sidebar .rpanel-title {
+    background: $color-layout-primary;
+}
+
+//.stylish-table tbody tr:hover, .stylish-table tbody tr.active {
+//    border-left: 4px solid #1976d2;
+//}
+
+//.profile-tab li a.nav-link.active,
+//.customtab li a.nav-link.active {
+//    border-bottom: 2px solid #1976d2;
+//    color: #1976d2;
+//}
+//
+//.profile-tab li a.nav-link:hover,
+//.customtab li a.nav-link:hover {
+//    color: #1976d2;
+//}
+
+
+
+
+/*******************
+ripple Effect
+*******************/
+
+.mat-button.mat-primary .mat-ripple-element {
+    /* background-color: rgba(0, 145, 234, 0.1); */
+    background-color: rgba(183, 196, 202, 0.5);
+}
+
+
+
+
+/*******************
+images
+*******************/
+
+.round {
+    color: $color-light-base;
+}
+
+
+
+/*******************
+Text Colors
+*******************/
+
+.text-white {
+    color: $color-light-base!important;
+}
+
+.text-danger {
+    color: $danger!important;
+}
+
+.text-muted {
+    color: $color-font-secondary!important;
+}
+
+.text-warning {
+    color: $warning!important;
+}
+
+.text-success {
+    color: $success!important;
+}
+
+.text-info {
+    color: $info!important;
+}
+
+.text-inverse {
+    color: $inverse!important;
+}
+
+html body {
+    .text-blue {
+        color: $blue;
+    }
+
+    .text-purple {
+        color: $color-danger;
+    }
+
+    .text-primary {
+        color: $primary;
+    }
+
+    .text-megna {
+        color: $megna;
+    }
+    .text-orange {
+        color:#f7bf6b;
+
+    }
+
+    .text-dark {
+        color: $color-font-secondary;
+    }
+    .text-primary {
+        color: $color-layout-primary;
+    }
+    .theme-text-secondary {
+        color: $color-font-secondary;
+    }
+}
+
+
+/*******************
+Background Colors
+*******************/
+
+.bg-primary {
+    background-color: $primary !important;
+}
+
+.bg-success {
+    background-color: $success !important;
+}
+
+.bg-info {
+    background-color: $info !important;
+}
+
+.bg-warning {
+    background-color: $warning !important;
+}
+
+.bg-danger {
+    background-color: $danger !important;
+}
+
+html body {
+    .bg-megna {
+        background-color: $megna;
+    }
+
+    .bg-theme {
+        background-color: $color-layout-primary;
+    }
+
+    .bg-inverse {
+        background-color: $inverse;
+    }
+
+    .bg-purple {
+        background-color: $color-danger;
+    }
+    .bg-light-part {
+        background-color: $bglight;
+    }
+    .bg-light-primary {
+        background-color: $light-primary;
+    }
+
+    .bg-light-success {
+        background-color: $light-success;
+    }
+
+    .bg-light-info {
+        background-color: $light-info;
+    }
+    .bg-light-extra {
+        background-color: $light-inverse;
+    }
+
+    .bg-light-warning {
+        background-color: $light-warning;
+    }
+
+    .bg-light-danger {
+        background-color: $light-danger;
+    }
+
+    .bg-light-inverse {
+        background-color: $light-inverse;
+    }
+    .bg-light {
+        background-color: $light;
+    }
+    .bg-white {
+        background-color: $color-light-base;
+    }
+}
+
+
+/*******************
+/*Top bar
+*******************/
+.topbar {
+    background: $color-layout-primary;
+}
+
+.topbar .navbar-header {
+    background: $color-light-base;
+}
+
+.topbar .navbar-light .navbar-nav .nav-item > a.nav-link {
+    color: $color-light-base !important;
+}
+
+.topbar .navbar-light .navbar-nav .nav-item > a.nav-link:hover, .topbar .navbar-light .navbar-nav .nav-item > a.nav-link:focus {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/*******************
+/*side bar menu
+ *******************/
+.left-sidebar {
+    background-color: $color-light-base;
+    box-shadow: 1px 0 20px $color-shadow;
+}
+
+.sidebar-footer {
+    background: $color-light-base;
+    border-top-color: $border;
+}
+
+.user-profile .profile-text >a {
+    color: $color-font-secondary;
+    &:hover {
+        color: $color-layout-primary;
+    }
+}
+
+.sidebar-nav {
+    background-color: $color-light-base;
+
+    .nav-devider {
+        background-color: $border;
+    }
+
+    >ul{
+        // all levels
+        li{
+            a{
+                color: $color-font-secondary;
+
+                &:hover {
+                    color: $color-layout-primary;
+                }
+            }
+
+        }
+
+        // first level
+        >li {
+            &.active>.has-arrow {
+                color: $color-layout-primary;
+
+                &:after {
+                    border-color: $color-layout-primary;
+                }
+            }
+
+            // second level
+            >ul>li.active>a{
+                color: $color-layout-primary;
+            }
+        }
+    }
+}
+
+
+/****************
+When click on sidebar toggler and also for tablet
+*****************/
+
+//@media(min-width:768px) {
+//    .responsive-mode .sidebar-nav .sidebarnav>li>ul {
+//        background-color: $color-background;
+//    }
+//    .responsive-mode {
+//        .sidebar-nav {
+//            background-color: transparent;
+//        }
+//        .sidebar-nav .sidebarnav>li:hover>a {
+//            background-color: $color-background;
+//        }
+//    }
+//}
+
+/*******************
+Forms + fields
+******************/
+
+.form-control {
+    color: $color-font-secondary;
+}
+
+.custom-control-input:checked~.custom-control-indicator {
+    background-color: $success;
+}
+
+.form-bordered .form-group {
+    border-bottom-color: $border;
+}
+
+// --- validations
+
+.error-message{
+    color: $color-danger;
+}
+
+
+/*******************
+/*Buttons
+*******************/
+
+.lang-switch select{
+    background-color: $color-layout-primary !important;
+    color: $color-light-base !important;
+}
+
+.login-box{
+    .lang-switch select{
+        background-color: $color-layout-primary-dark !important;
+    }
+}
+
+.btn-themecolor,
+.btn-themecolor.disabled {
+    background: $color-layout-primary;
+    color: $color-light-base;
+}
+
+.btn-themecolor:hover,
+.btn-themecolor.disabled:hover {
+    background: $color-layout-primary;
+    opacity: 0.7;
+    //border: 1px solid #1976d2;
+}
+
+.btn-themecolor.active, .btn-themecolor:focus,
+.btn-themecolor.disabled.active,
+.btn-themecolor.disabled:focus {
+    background: $color-layout-primary;
+}
+
+.btn-group {
+    label {
+        color: $color-light-base!important;
+
+        &.btn-secondary {
+            color: $color-font-secondary!important;
+        }
+    }
+}
+
+.btn-outline {
+    color: inherit;
+    background-color: transparent;
+}
+
+
+.btn-secondary,
+.btn-secondary.disabled {
+    background-color: $color-light-base;
+    color: $color-font-secondary;
+    border-color: $form-brd;
+}
+
+.btn-primary,
+.btn-primary.disabled {
+    background: $primary;
+    border-color: $primary;
+    &:hover {
+        background: $primary;
+        border-color: $primary;
+    }
+    &.active,
+    &:active,
+    &:focus {
+        background: $primary-dark;
+    }
+}
+
+.btn-color-layout-primary,
+.btn-color-layout-primary.disabled {
+    background: $color-layout-primary;
+    color: $color-light-base;
+    border-color:$color-layout-primary;
+    &:hover {
+        background: $color-layout-primary;
+        border-color: $color-layout-primary;
+    }
+    &.active,
+    &:active,
+    &:focus {
+        background: $color-layout-primary-dark;
+    }
+}
+
+.btn-success,
+.btn-success.disabled {
+    background-color: $success;
+    border-color: $success;
+
+    &:hover,
+    &.active,
+    &:active,
+    &:focus {
+        background-color: $success-dark;
+        border-color: $success-dark;
+    }
+}
+//
+//
+//.btn-success.active.focus,
+//.btn-success.active:focus,
+//.btn-success.active:hover,
+//.btn-success.focus:active,
+//.btn-success:active:focus,
+//.btn-success:hover,
+//.open>.dropdown-toggle.btn-success.focus,
+//.open>.dropdown-toggle.btn-success:focus,
+//.open>.dropdown-toggle.btn-success:hover,
+//.btn-success.focus,
+//.btn-success:focus {
+//    background-color: $success-dark;
+//    border-color: $success-dark;
+//}
+
+.btn-info,
+.btn-info.disabled {
+    background: $info;
+    border-color: $info;
+    &:hover {
+        background: $info;
+        border-color: $info;
+    }
+    &.active,
+    &:active,
+    &:focus {
+        background: $info-dark;
+    }
+}
+
+.btn-warning,
+.btn-warning.disabled {
+    background: $warning;
+    color: $color-light-base;
+    border-color: $warning;
+
+    &:hover {
+        background: $warning;
+        color: $color-light-base;
+        border-color: $warning;
+    }
+    &.active,
+    &:active,
+    &:focus {
+        background: $warning-dark;
+        color: $color-light-base;
+    }
+}
+
+.btn-danger,
+.btn-danger.disabled {
+    background: $danger;
+    border-color: $danger;
+    &:hover {
+        background: $danger;
+        border-color: $danger;
+    }
+    &.active,
+    &:active,
+    &:focus {
+        background: $danger-dark;
+    }
+}
+
+.btn-inverse,
+.btn-inverse.disabled {
+    background: $inverse;
+    border-color: $inverse;
+    color: $color-light-base;
+    &:hover {
+        background: $inverse;
+        color: $color-light-base;
+        border-color: $inverse;
+    }
+    &.active,
+    &:active,
+    &:focus {
+        background: $inverse-dark;
+        color: $color-light-base;
+    }
+}
+
+.btn-red,
+.btn-red.disabled {
+    background: $color-danger;
+    border-color: $color-danger;
+    color: $color-light-base;
+    &:hover {
+        border-color: $color-danger;
+        background: $color-danger;
+    }
+    &.active,
+    &:active,
+    &:focus {
+        background: $danger-dark;
+    }
+}
+
+.btn-outline-secondary {
+    background-color: $color-light-base;
+    box-shadow: $default-shadow;
+    &:hover,
+    &:focus,
+    &.focus {
+        box-shadow: $default-shadow-hover;
+    }
+    &.active,
+    &:active,
+    &:focus {
+        box-shadow: $default-shadow-hover;
+    }
+}
+
+.btn-outline-primary {
+    color: $primary;
+    background-color: $color-light-base;
+    border-color: $primary;
+    &:hover,
+    &:focus,
+    &.focus {
+        background: $primary;
+        color: $color-light-base;
+        border-color: $primary;
+    }
+    &.active,
+    &:active,
+    &:focus {
+        background: $primary-dark;
+    }
+}
+
+.btn-outline-success {
+    color: $success;
+    background-color: transparent;
+    border-color: $success;
+    box-shadow: $success-shadow;
+    &:hover,
+    &:focus,
+    &.focus {
+        background: $success;
+        border-color: $success;
+        color: $color-light-base;
+        box-shadow: $success-shadow-hover;
+    }
+    &.active,
+    &:active,
+    &:focus {
+        box-shadow: $success-shadow-hover;
+        background: $success-dark;
+    }
+}
+
+.btn-outline-info {
+    color: $info;
+    background-color: transparent;
+    border-color: $info;
+    box-shadow: $info-shadow;
+    &:hover,
+    &:focus,
+    &.focus {
+        background: $info;
+        border-color: $info;
+        color: $color-light-base;
+        box-shadow: $info-shadow-hover;
+    }
+    &.active,
+    &:active,
+    &:focus {
+        box-shadow: $info-shadow-hover;
+        background: $info-dark;
+    }
+}
+
+.btn-outline-warning {
+    color: $warning;
+    background-color: transparent;
+    border-color: $warning;
+    box-shadow: $warning-shadow;
+    &:hover,
+    &:focus,
+    &.focus {
+        background: $warning;
+        border-color: $warning;
+        color: $color-light-base;
+        box-shadow: $warning-shadow-hover;
+    }
+    &.active,
+    &:active,
+    &:focus {
+        box-shadow: $warning-shadow-hover;
+        background: $warning-dark;
+    }
+}
+
+.btn-outline-danger {
+    color: $danger;
+    background-color: transparent;
+    border-color: $danger;
+    box-shadow: $danger-shadow;
+    &:hover,
+    &:focus,
+    &.focus {
+        background: $danger;
+        border-color: $danger;
+        color: $color-light-base;
+        box-shadow: $danger-shadow-hover;
+    }
+    &.active,
+    &:active,
+    &:focus {
+        box-shadow: $danger-shadow-hover;
+        background: $danger-dark;
+    }
+}
+
+.btn-outline-red {
+    color: $color-danger;
+    background-color: transparent;
+    border-color: $color-danger;
+    &:hover,
+    &:focus,
+    &.focus {
+        background: $color-danger;
+        border-color: $color-danger;
+        color: $color-light-base;
+        box-shadow: $danger-shadow-hover;
+    }
+    &.active,
+    &:active,
+    &:focus {
+        box-shadow: $danger-shadow-hover;
+        background: $danger-dark;
+    }
+}
+
+.btn-outline-inverse {
+    color: $inverse;
+    background-color: transparent;
+    border-color: $inverse;
+    &:hover,
+    &:focus,
+    &.focus {
+        background: $inverse;
+        border-color: $inverse;
+        color: $color-light-base;
+    }
+}
+
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary.focus:active,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open>.dropdown-toggle.btn-primary.focus,
+.open>.dropdown-toggle.btn-primary:focus,
+.open>.dropdown-toggle.btn-primary:hover,
+.btn-primary.focus,
+.btn-primary:focus {
+    background-color: $primary-dark;
+    border-color: $primary-dark;
+}
+
+.btn-info.active.focus,
+.btn-info.active:focus,
+.btn-info.active:hover,
+.btn-info.focus:active,
+.btn-info:active:focus,
+.btn-info:active:hover,
+.open>.dropdown-toggle.btn-info.focus,
+.open>.dropdown-toggle.btn-info:focus,
+.open>.dropdown-toggle.btn-info:hover,
+.btn-info.focus,
+.btn-info:focus {
+    background-color: $info-dark;
+    border-color: $info-dark;
+}
+
+.btn-warning.active.focus,
+.btn-warning.active:focus,
+.btn-warning.active:hover,
+.btn-warning.focus:active,
+.btn-warning:active:focus,
+.btn-warning:active:hover,
+.open>.dropdown-toggle.btn-warning.focus,
+.open>.dropdown-toggle.btn-warning:focus,
+.open>.dropdown-toggle.btn-warning:hover,
+.btn-warning.focus,
+.btn-warning:focus {
+    background-color: $warning-dark;
+    border-color: $warning-dark;
+}
+
+.btn-danger.active.focus,
+.btn-danger.active:focus,
+.btn-danger.active:hover,
+.btn-danger.focus:active,
+.btn-danger:active:focus,
+.btn-danger:active:hover,
+.open>.dropdown-toggle.btn-danger.focus,
+.open>.dropdown-toggle.btn-danger:focus,
+.open>.dropdown-toggle.btn-danger:hover,
+.btn-danger.focus,
+.btn-danger:focus {
+    background-color: $danger-dark;
+    border-color: $danger-dark;
+}
+
+.btn-inverse:hover,
+.btn-inverse:focus,
+.btn-inverse:active,
+.btn-inverse.active,
+.btn-inverse.focus,
+.btn-inverse:active,
+.btn-inverse:focus,
+.btn-inverse:hover,
+.open>.dropdown-toggle.btn-inverse {
+    background-color: $inverse-dark;
+    border-color: $inverse-dark;
+}
+
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active,
+.btn-red.active,
+.btn-red.focus,
+.btn-red:active,
+.btn-red:focus,
+.btn-red:hover,
+.open>.dropdown-toggle.btn-red {
+    background-color: $danger-dark;
+    border-color: $danger-dark;
+    color: $color-light-base;
+}
+
+.btn-label {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/*******************
+Pagination
+*******************/
+
+.pagination>li>a,
+.pagination>li>span {
+    color: $dark;
+}
+
+.pagination>li>a:hover,
+.pagination>li>span:hover,
+.pagination>li>a:focus,
+.pagination>li>span:focus {
+    background-color: $light;
+}
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+    background-color: $color-layout-primary;
+    border-color: $color-layout-primary;
+}
+
+.pager li>a,
+.pager li>span {
+    color: $dark;
+}
+
+/*******************
+Table
+*******************/
+
+.table td,
+.table th {
+    border-color: $table-border;
+}
+
+.table-hover tbody tr:hover {
+    background: $light;
+}
+
+/*******************
+Badge
+*******************/
+
+.badge-success {
+    background-color: $success;
+}
+
+.badge-info {
+    background-color: $info;
+}
+
+.badge-primary {
+    background-color: $primary;
+}
+
+.badge-warning {
+    background-color: $warning;
+}
+
+.badge-danger {
+    background-color: $danger;
+}
+
+.badge-purple {
+    background-color: $color-danger;
+}
+
+.badge-red {
+    background-color: $color-danger;
+}
+
+.badge-inverse {
+    background-color: $inverse;
+}
+
+/*******************
+Labels
+*******************/
+
+.label-themecolor {
+    background: $color-layout-primary;
+}
+
+.label-light-success {
+    background-color: $light-success;
+    color: $success;
+}
+
+.label-light-info {
+    background-color: $light-info;
+    color: $info;
+}
+
+.label-light-warning {
+    background-color: $light-warning;
+    color: $warning;
+}
+
+.label-light-danger {
+    background-color: $light-danger;
+    color: $danger;
+}
+
+.label-light-megna {
+    background-color: $light-megna;
+    color: $megna;
+}
+
+.label-light-primary {
+    background-color: $light-primary;
+    color: $primary;
+}
+
+.label-light-inverse {
+    background-color: $light-inverse;
+    color: $inverse;
+}
+
+/*******************
+List-style-none
+******************/
+
+ul.list-style-none {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+        a {
+            color: $color-font-secondary;
+            padding: 8px 0;
+            display: block;
+            text-decoration: none;
+            &:hover {
+                color: $color-layout-primary;
+            }
+        }
+    }
+}
+
+/*******************
+cards
+******************/
+
+.card {
+    box-shadow: 0 5px 20px $color-shadow;
+
+    .card-subtitle {
+        color: $color-font-secondary;
+    }
+}
+
+.card-outline-danger,
+.card-outline-info,
+.card-outline-warning,
+.card-outline-success,
+.card-outline-primary {
+    background: $color-light-base;
+}
+
+.card-default {
+    .card-header {
+        background: $color-light-base;
+    }
+}
+
+
+// ====================================================================================
+// PAGES
+// ====================================================================================
+
+
+/*******************
+Login register and recover password Page
+******************/
+
+.login-register {
+
+    //background: linear-gradient(to bottom, $color-background 0%, $color-background 63%, $color-layout-primary 63%, $color-layout-primary 100%);
+
+    .login-bg-inner{
+        background-image: url($login-bg);
+        background-color: $color-background;
+    }
+}
+
+.login-box {
+    .card-header{
+        background-color: $color-layout-primary;
+        border-bottom-color: $color-layout-secondary;
+    }
+
+    .card-body{
+        background-image: url($login-box-bg);
+        background-color: $color-light-base;
+    }
+
+    .card-footer {
+        background-color: $color-layout-primary-dark;
+
+        a {
+            color: $color-light-base;
+        }
+    }
+}
+
+.login-footer{
+    color: $color-background;
+}
+
+
+
+/*******************
+ ONLINE
+******************/
+
+.online-index-icon{
+    color: $color-layout-highlight;
+}
+
+.online-filter{
+    button {
+        background-color: $color-light-base;
+        color: $color-layout-primary;
+
+        &.active {
+            background-color: $color-layout-primary;
+            color: $color-light-base;
+        }
+    }
+}
+
+.online-machine{
+    .card-header{
+        color: $color-light-base;
+    }
+
+    .card-body{
+        .item {
+            border-bottom-color: rgba(120, 130, 140, 0.13);
+
+            &:last-child{
+                border-bottom-color: transparent;
+            }
+        }
+    }
+}
+
+
+/*******************
+ ORDERS
+******************/
+
+//.orders-card-machine{
+//    .card-header {
+//        background-color: $color-light-base;
+//    }
+//    .card-body{
+//        background-color: rgba(0,0,0,0.03);
+//    }
+//}

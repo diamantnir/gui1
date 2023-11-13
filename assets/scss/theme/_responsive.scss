@@ -1,0 +1,370 @@
+/*==============================================================
+ For Laptop & above all (1650px) 
+ ============================================================== */
+
+@media(min-width: 1650px) {
+    .widget-app-columns {
+        column-count: 3;
+    }
+    .campaign {
+        height: 365px !important;
+    }
+}
+
+/*==============================================================
+ For Laptop & above all (1370px) 
+ ============================================================== */
+
+@media(max-width: 1370px) {
+    .widget-app-columns {
+        column-count: 2;
+    }
+}
+
+/*-- ==============================================================
+ Small Desktop & above all (1024px) 
+ ============================================================== */
+
+@media(min-width: 1024px) {
+    .footer {
+        left: 240px;
+    }
+
+}
+
+@media(max-width: 1023px) {
+    .page-wrapper {
+        transition: 0.2s ease-in;
+    }
+    .widget-app-columns {
+        column-count: 1;
+    }
+    .inbox-center a {
+        width: 200px;
+    }
+}
+
+/*-- ==============================================================
+ Ipad & above all(768px) 
+ ============================================================== */
+
+@media(min-width: 768px) {
+    .navbar-header {
+        width: 225px;
+        flex-shrink: 0;
+        .navbar-brand {
+            padding-top: 0;
+        }
+    }
+    /*This is for the breeadcrumd*/
+    .page-titles {
+        .breadcrumb {
+            float: right;
+        }
+    }
+    .card-group .card:first-child, .card-group .card:not(:first-child):not(:last-child) {
+        border-right: 1px solid rgba(0, 0, 0, 0.03);
+
+    }
+    .material-icon-list-demo .icons div {
+        width: 33%;
+        padding: 15px;
+        display: inline-block;
+        line-height: 40px;
+    }
+    .flex-wrap {
+        flex-wrap: nowrap !important;
+        -webkit-flex-wrap: nowrap !important;
+    }
+
+}
+
+/*-- ==============================================================
+ Phone and below ipad(767px) 
+ ============================================================== */
+
+@media(max-width: 767px) {
+
+    /*Header*/
+    .topbar {
+        position: fixed;
+        width: 100%;
+        .top-navbar {
+            padding-right: 15px;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            -webkit-align-items: center;
+            .navbar-collapse {
+                display: flex;
+                width: 100%;
+            }
+            .navbar-nav {
+                flex-direction: row;
+                > .nav-item.show {
+                    position: static;
+                    .dropdown-menu {
+                        width: 100%;
+                        margin-top: 0;
+                    }
+                }
+                > .nav-item > .nav-link {
+                    padding-left: .50rem;
+                    padding-right: .50rem;
+                    > i {
+                        font-size: $font-size-xxl; //TODO: move to sm
+                    }
+                }
+                .dropdown-menu {
+                    position: absolute;
+                }
+            }
+        }
+    }
+    .mega-dropdown {
+        .dropdown-menu {
+            height: 480px;
+            overflow: auto;
+        }
+    }
+
+    /*wrapper*/
+    .responsive-mode .page-wrapper {
+        margin-left: 0;
+        padding-top: 60px;
+    }
+    .comment-text {
+        .comment-footer {
+            .action-icons {
+                display: block;
+                padding: 10px 0;
+            }
+        }
+    }
+
+    .vtabs .tabs-vertical {
+        width: auto;
+    }
+    .material-icon-list-demo .icons div {
+        width: 100%;
+    }
+    .error-page {
+        .footer {
+            position: fixed;
+            bottom: 0;
+            z-index: 10;
+        }
+    }
+    .error-box {
+        position: relative;
+        padding-bottom: 60px;
+    }
+    .error-body {
+        padding-top: 10%;
+        h1 {
+            font-size: 100px;
+            font-weight: 600;
+            line-height: 100px;
+        }
+    }
+
+    .login-box {
+        width: 90%;
+    }
+
+    /*This is for chat page*/
+    //.chat-main-box .chat-left-aside {
+    //    left: -250px;
+    //    position: absolute;
+    //
+    //    transition: 0.5s ease-in;
+    //    background: $color-light-base;
+    //    &.open-pnl {
+    //        left: 0;
+    //    }
+    //    .open-panel {
+    //        display: block;
+    //    }
+    //}
+    //.chat-main-box .chat-right-aside {
+    //    width: 100%;
+    //}
+    /*Timeline*/
+    ul.timeline:before {
+        left: 40px;
+    }
+    ul.timeline > li > .timeline-panel {
+        width: calc(100% - 90px);
+    }
+    ul.timeline > li > .timeline-badge {
+        top: 16px;
+        left: 15px;
+        margin-left: 0;
+    }
+    ul.timeline > li > .timeline-panel {
+        float: right;
+    }
+    ul.timeline > li > .timeline-panel:before {
+        right: auto;
+        left: -15px;
+        border-right-width: 15px;
+        border-left-width: 0;
+    }
+    ul.timeline > li > .timeline-panel:after {
+        right: auto;
+        left: -14px;
+        border-right-width: 14px;
+        border-left-width: 0;
+    }
+
+    /*Contact app page*/
+    .left-aside {
+        width: 100%;
+        position: relative;
+        border: 0;
+    }
+    .right-aside {
+        margin-left: 0;
+    }
+    .flex-wrap {
+        flex-wrap: wrap !important;
+        -webkit-flex-wrap: wrap !important;
+    }
+    .chat-list li .chat-content {
+        width: calc(100% - 80px);
+    }
+}
+
+// ---------------------------------------------------------------------------------------
+
+//  (max-width: 991.99px)
+@include media-breakpoint-down(md) {
+    .topbar {
+        .top-navbar {
+            .navbar-header {
+                width: 30px;
+                overflow: hidden;
+
+                .navbar-brand .logo {
+                    height: 28px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px){
+    .page-wrapper {
+        margin-left: 240px;
+    }
+
+    .footer {
+        left: 240px;
+    }
+}
+
+@media (max-width: 425px){
+    .footer {
+        left: 0;
+    }
+
+    .left-sidebar {
+        display: none;
+    }
+}
+
+
+// tablet - max-width: 768px
+//@include media-breakpoint-up(md) {
+//@media (min-width: 768px and max-width){
+//    .fix-sidebar .left-sidebar {
+//        position: absolute;
+//    }
+//
+//    .left-sidebar {
+//        width: $mini-sidebar-width;
+//    }
+//
+//    .sidebar-nav .sidebarnav {
+//        li {
+//            position: relative;
+//        }
+//        > li {
+//            > ul {
+//                position: absolute;
+//                left: 60px;
+//                top: 45px;
+//                width: 200px;
+//                z-index: 1001;
+//                display: none;
+//                padding-left: 1px;
+//            }
+//            > ul.collapse {
+//                display: block;
+//            }
+//            &:hover {
+//                > ul {
+//                    height: auto !important;
+//                    overflow: auto;
+//                }
+//                > a {
+//                    width: 260px;
+//                    .label {
+//                        display: none;
+//                    }
+//                }
+//            }
+//        }
+//
+//        > a {
+//            padding: 9px 18px;
+//            width: 50px;
+//            min-width: auto;
+//
+//            &.has-arrow:after {
+//                display: none;
+//            }
+//        }
+//
+//    }
+//
+//    .user-profile {
+//        padding-bottom: 15px;
+//        width: 60px;
+//        margin-bottom: 7px;
+//        .profile-img {
+//            padding: 15px 0 0 0;
+//            margin: 0 0 0 6px;
+//
+//            width: 50px;
+//            .setpos {
+//                top: -35px;
+//            }
+//
+//            &:before {
+//                top: 15px;
+//            }
+//        }
+//    }
+//    .scroll-sidebar {
+//        padding-bottom: 0;
+//        position: absolute;
+//        overflow-x: hidden !important;
+//    }
+//
+//    .nav-small-cap,
+//    .sidebar-footer,
+//    .menuitem-text,
+//    .user-profile .profile-text {
+//        display: none;
+//    }
+//    .nav-devider {
+//        width: 60px;
+//    }
+//
+//    .navbar-expand-md .navbar-nav {
+//        padding-left: 10px;
+//    }
+//}

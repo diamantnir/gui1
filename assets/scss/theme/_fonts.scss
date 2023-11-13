@@ -1,0 +1,119 @@
+/* ------------------------------------------------------------------------------
+ *
+ *  # Poppins
+ *
+ *  Google fonts - Latin
+ *
+ * ---------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Poppins Light'), local('Poppins-Light'), url(../fonts/Poppins/D2gN9uyZ9Ucx1fJ1Fhb7s_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poppins Regular'), local('Poppins-Regular'), url(../fonts/Poppins/HLBysyo0MQBO_7E-DWLwzg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Poppins Medium'), local('Poppins-Medium'), url(../fonts/Poppins/yQWaOD4iNU5NTY0apN-qj_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url(../fonts/Poppins/zO07Oxe3SOlw0l2YX2sdIfk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Poppins Bold'), local('Poppins-Bold'), url(../fonts/Poppins/57TQ-anwthzkETEIO4jESPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* ------------------------------------------------------------------------------
+ *
+ *  # Rubik
+ *
+ *  Google fonts - Hebrew
+ *
+ * ---------------------------------------------------------------------------- */
+
+//@font-face {
+//    font-family: 'Rubik';
+//    font-style: normal;
+//    font-weight: 300;
+//    src: local('Rubik Light'), local('Rubik-Light'), url(https://fonts.gstatic.com/s/rubik/v7/oip-K2YN3EYHgt8SY7FJfBTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+//    unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+//}
+//
+//@font-face {
+//    font-family: 'Rubik';
+//    font-style: normal;
+//    font-weight: 400;
+//    src: local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v7/-fe1N1QeP0UtBmYG66PGsA.woff2) format('woff2');
+//    unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+//}
+//
+//@font-face {
+//    font-family: 'Rubik';
+//    font-style: normal;
+//    font-weight: 500;
+//    src: local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v7/UVNnZWb9UilkxwgKrV-6TBTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+//    unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+//}
+//
+//@font-face {
+//    font-family: 'Rubik';
+//    font-style: normal;
+//    font-weight: 700;
+//    src: local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v7/qM4Xdpgnd4UROLJsnasqaBTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
+//    unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+//}
+
+
+
+/*******************
+ size
+*******************/
+
+
+.font-base {
+    font-size: $font-size-base;
+}
+.font-xs{
+    font-size: $font-size-xs;
+}
+//.font-sm{
+//    font-size: $font-size-sm;
+//}
+//.font-md{
+//    font-size: $font-size-md;
+//}
+//.font-lg{
+//    font-size: $font-size-md;
+//}
+.font-xl{
+    font-size: $font-size-xl;
+}
+.font-xxl{
+    font-size: $font-size-xxl;
+}
+.font-3{
+    font-size: $font-size-3;
+}

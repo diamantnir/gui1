@@ -1,0 +1,967 @@
+/*******************
+Global Styles
+*******************/
+
+* {
+    outline: none;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-weight: 400;
+    margin: 0;
+    overflow-x: hidden;
+    text-align: left;
+}
+
+ol li {
+    margin: 5px 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.dir-ltr{
+    direction: ltr;
+}
+
+.dir-rtl{
+    direction: rtl;
+}
+
+//html body {
+//    .dl {
+//        display: inline-block;
+//    }
+//    .db {
+//        display: block;
+//    }
+//}
+
+
+// material icons
+html body .mdi:before,
+html body .mdi-set {
+    line-height: initial;
+}
+
+// addition to bootstrap
+.display-5 {
+    font-size: 3rem;
+}
+
+.display-6 {
+    font-size: 36px;
+}
+
+.box {
+    border-radius: $radius;
+    padding: 10px;
+}
+
+// use .text-nowrap instead?
+//.no-wrap {
+//    td,
+//    th {
+//        white-space: nowrap;
+//    }
+//}
+
+// use clearfix instead
+//.clear {
+//    clear: both;
+//}
+
+
+/*******************
+Paddings
+*******************/
+// use bootstrap or override
+//html body {
+//    .p-0 {
+//        padding: 0;
+//    }
+//
+//    .p-10 {
+//        padding: 10px;
+//    }
+//
+//    .p-20 {
+//        padding: 20px;
+//    }
+//
+//    .p-30 {
+//        padding: 30px;
+//    }
+//
+//    .p-l-0 {
+//        padding-left: 0;
+//    }
+//
+//    .p-l-10 {
+//        padding-left: 10px;
+//    }
+//
+//    .p-l-20 {
+//        padding-left: 20px;
+//    }
+//
+//    .p-r-0 {
+//        padding-right: 0;
+//    }
+//
+//    .p-r-10 {
+//        padding-right: 10px;
+//    }
+//
+//    .p-r-20 {
+//        padding-right: 20px;
+//    }
+//
+//    .p-r-30 {
+//        padding-right: 30px;
+//    }
+//
+//    .p-r-40 {
+//        padding-right: 40px;
+//    }
+//
+//    .p-t-0 {
+//        padding-top: 0;
+//    }
+//
+//    .p-t-10 {
+//        padding-top: 10px;
+//    }
+//
+//    .p-t-20 {
+//        padding-top: 20px;
+//    }
+//
+//    .p-t-30 {
+//        padding-top: 30px;
+//    }
+//
+//    .p-b-0 {
+//        padding-bottom: 0;
+//    }
+//
+//    .p-b-5 {
+//        padding-bottom: 5px;
+//    }
+//
+//    .p-b-10 {
+//        padding-bottom: 10px;
+//    }
+//
+//    .p-b-20 {
+//        padding-bottom: 20px;
+//    }
+//
+//    .p-b-30 {
+//        padding-bottom: 30px;
+//    }
+//
+//    .p-b-40 {
+//        padding-bottom: 40px;
+//    }
+//}
+
+
+/*******************
+Margin
+*******************/
+.m-b-small{
+    margin-bottom: 1.25rem;
+}
+
+// use bootstrap or override
+//html body {
+//    .m-0 {
+//        margin: 0;
+//    }
+//
+//    .m-l-5 {
+//        margin-left: 5px;
+//    }
+//
+//    .m-l-10 {
+//        margin-left: 10px;
+//    }
+//
+//    .m-l-15 {
+//        margin-left: 15px;
+//    }
+//
+//    .m-l-20 {
+//        margin-left: 20px;
+//    }
+//
+//    .m-l-30 {
+//        margin-left: 30px;
+//    }
+//
+//    .m-l-40 {
+//        margin-left: 40px;
+//    }
+//
+//    .m-r-5 {
+//        margin-right: 5px;
+//    }
+//
+//    .m-r-10 {
+//        margin-right: 10px;
+//    }
+//
+//    .m-r-15 {
+//        margin-right: 15px;
+//    }
+//
+//    .m-r-20 {
+//        margin-right: 20px;
+//    }
+//
+//    .m-r-30 {
+//        margin-right: 30px;
+//    }
+//
+//    .m-r-40 {
+//        margin-right: 40px;
+//    }
+//
+//    .m-t-0 {
+//        margin-top: 0;
+//    }
+//
+//    .m-t-5 {
+//        margin-top: 5px;
+//    }
+//
+//    .m-t-10 {
+//        margin-top: 10px;
+//    }
+//
+//    .m-t-15 {
+//        margin-top: 15px;
+//    }
+//
+//    .m-t-20 {
+//        margin-top: 20px;
+//    }
+//
+//    .m-t-30 {
+//        margin-top: 30px;
+//    }
+//
+//    .m-t-40 {
+//        margin-top: 40px;
+//    }
+//
+//    .m-b-0 {
+//        margin-bottom: 0;
+//    }
+//
+//    .m-b-5 {
+//        margin-bottom: 5px;
+//    }
+//
+//    .m-b-10 {
+//        margin-bottom: 10px;
+//    }
+//
+//    .m-b-15 {
+//        margin-bottom: 15px;
+//    }
+//
+//    .m-b-20 {
+//        margin-bottom: 20px;
+//    }
+//
+//    .m-b-30 {
+//        margin-bottom: 30px;
+//    }
+//
+//    .m-b-40 {
+//        margin-bottom: 40px;
+//    }
+//}
+
+
+/*******************
+vertical alignment
+*******************/
+// bootstrap - align-top, etc
+//html body {
+//    .vt {
+//        vertical-align: top;
+//    }
+//
+//    .vm {
+//        vertical-align: middle;
+//    }
+//
+//    .vb {
+//        vertical-align: bottom;
+//    }
+//}
+
+
+/*******************
+Border
+*******************/
+// use bootstrap instead: utilities/borders
+//html body {
+//    .b-0 {
+//        border: none;
+//    }
+//    .b-r {
+//        border-right: 1px solid;
+//    }
+//    .b-l {
+//        border-left: 1px solid;
+//    }
+//    .b-b {
+//        border-bottom: 1px solid;
+//    }
+//    .b-t {
+//        border-top: 1px solid;
+//    }
+//    .b-all {
+//        border: 1px solid;
+//    }
+//}
+
+
+/*******************
+images
+*******************/
+
+// bootstrap - .img-thumbnail
+//.thumb-sm {
+//    height: 32px;
+//    width: 32px;
+//}
+//
+//.thumb-md {
+//    height: 48px;
+//    width: 48px;
+//}
+//
+//.thumb-lg {
+//    height: 88px;
+//    width: 88px;
+//}
+
+// bootstrap - d-none
+//.hide {
+//    display: none;
+//}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.img-rounded {
+    border-radius: $radius; // 4px
+}
+
+.img-circle {
+    border-radius: 100%;
+}
+
+.radius {
+    border-radius: $radius;
+}
+
+
+/*******************
+Rounds - widget-data.html
+*******************/
+
+.round {
+    line-height: 48px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 100%;
+    background: $info;
+    img {
+        border-radius: 100%;
+    }
+}
+
+.round-lg {
+    line-height: 65px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+}
+
+// use background color class instead => palette/blue
+//.round.round-info {
+//    background: $info;
+//}
+//
+//.round.round-warning {
+//    background: $warning;
+//}
+//
+//.round.round-danger {
+//    background: $danger;
+//}
+//
+//.round.round-success {
+//    background: $success;
+//}
+//
+//.round.round-primary {
+//    background: $primary;
+//}
+
+
+/*******************
+Labels
+*******************/
+
+.label {
+    padding: 3px 10px;
+    line-height: 13px;
+    font-weight: 400;
+    border-radius: $radius;
+    font-size: 75%;
+}
+
+.label-rounded {
+    border-radius: 60px;
+}
+
+// use background color class instead => palette/blue
+//.label-custom {
+//    background-color: $megna;
+//}
+//
+//.label-success {
+//    background-color: $success;
+//}
+//
+//.label-info {
+//    background-color: $info;
+//}
+//
+//.label-warning {
+//    background-color: $warning;
+//}
+//
+//.label-danger {
+//    background-color: $danger;
+//}
+//
+//.label-megna {
+//    background-color: $megna;
+//}
+//
+//.label-primary {
+//    background-color: $primary;
+//}
+//
+//.label-purple {
+//    background-color: $color-danger;
+//}
+//
+//.label-red {
+//    background-color: $color-danger;
+//}
+//
+//.label-inverse {
+//    background-color: $inverse;
+//}
+//
+//.label-default {
+//    background-color: $light;
+//}
+//
+//.label-white {
+//    background-color: $color-light-base;
+//}
+
+
+
+
+/*******************
+Pagination
+*******************/
+
+.pagination>li:first-child>a,
+.pagination>li:first-child>span {
+    border-bottom-left-radius: $radius;
+    border-top-left-radius: $radius;
+}
+
+.pagination>li:last-child>a,
+.pagination>li:last-child>span {
+    border-bottom-right-radius: $radius;
+    border-top-right-radius: $radius;
+}
+
+.pagination-split li {
+    margin-left: 5px;
+    display: inline-block;
+    float: $lft;
+}
+
+.pagination-split li:first-child {
+    margin-left: 0;
+}
+
+.pagination-split li a {
+    border-radius: $radius;
+}
+
+.pager li>a,
+.pager li>span {
+    border-radius: $radius;
+}
+
+
+
+
+
+
+/*******************
+Table Cell
+*******************/
+
+.table-box {
+    display: table;
+    width: 100%;
+}
+
+.table.no-border {
+    tbody {
+        td {
+            border: 0;
+        }
+    }
+}
+
+.cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.table thead th,
+.table th {
+    font-weight: 500;
+}
+
+// use .text-nowrap
+//.nowrap {
+//    white-space: nowrap;
+//}
+
+.lite-padding td {
+    padding: 5px;
+}
+
+.v-middle {
+    td,
+    th {
+        vertical-align: middle;
+    }
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/*Badge*/
+
+.badge {
+    font-weight: 400;
+}
+
+.badge-xs {
+    font-size: 9px;
+}
+
+.badge-xs,
+.badge-sm {
+    transform: translate(0, -2px);
+}
+
+
+/*******************
+Buttons
+******************/
+
+.btn {
+    padding: 7px 12px;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    transition: 0.2s ease-in;
+}
+
+.btn-group {
+    label {
+        margin-bottom: 0;
+    }
+}
+
+.btn-lg {
+    padding: .75rem 1.5rem;
+    font-size: 1.25rem;
+}
+
+.btn-md {
+    padding: 12px 55px;
+    font-size: 16px;
+}
+
+.btn-circle {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+.btn-circle.btn-sm {
+    width: 35px;
+    height: 35px;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 14px 15px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 14px 15px;
+    font-size: 24px;
+}
+
+.btn-sm {
+    padding: .25rem .5rem;
+    font-size: 12px;
+}
+
+.btn-xs {
+    padding: .25rem .5rem;
+    font-size: 10px;
+}
+
+.button-list button,
+.button-list a {
+    margin: 5px 12px 5px 0;
+}
+
+.btn-outline {
+    transition: all .5s;
+}
+
+.btn-rounded {
+    border-radius: 60px;
+    padding: 7px 18px;
+
+    &.btn-lg {
+        padding: .75rem 1.5rem;
+    }
+    &.btn-sm {
+        padding: .25rem .5rem;
+        font-size: 12px;
+    }
+    &.btn-xs {
+        padding: .25rem .5rem;
+        font-size: 10px;
+    }
+    &.btn-md {
+        padding: 12px 35px;
+        font-size: 16px;
+    }
+}
+
+.button-box .btn {
+    margin: 0 8px 8px 0;
+}
+
+.btn-label {
+    display: inline-block;
+    margin: -6px 12px -6px -14px;
+    padding: 7px 15px;
+}
+
+
+/*******************
+Notify
+*******************/
+
+//.notify {
+//    position: relative;
+//    top: -22px;
+//    right: -9px;
+//    .heartbit {
+//        position: absolute;
+//        top: -20px;
+//        right: -4px;
+//        height: 25px;
+//        width: 25px;
+//        z-index: 10;
+//        border: 5px solid $danger;
+//        border-radius: 70px;
+//        animation-iteration-count: infinite;
+//    }
+//    .point {
+//        width: 6px;
+//        height: 6px;
+//        -webkit-border-radius: 30px;
+//        -moz-border-radius: 30px;
+//        border-radius: 30px;
+//        background-color: $danger;
+//        position: absolute;
+//        right: 6px;
+//        top: -10px;
+//    }
+//}
+//
+//@-moz-keyframes heartbit {
+//    0% {
+//        -moz-transform: scale(0);
+//        opacity: 0.0;
+//    }
+//    25% {
+//        -moz-transform: scale(0.1);
+//        opacity: 0.1;
+//    }
+//    50% {
+//        -moz-transform: scale(0.5);
+//        opacity: 0.3;
+//    }
+//    75% {
+//        -moz-transform: scale(0.8);
+//        opacity: 0.5;
+//    }
+//    100% {
+//        -moz-transform: scale(1);
+//        opacity: 0.0;
+//    }
+//}
+//
+//@-webkit-keyframes heartbit {
+//    0% {
+//        -webkit-transform: scale(0);
+//        opacity: 0.0;
+//    }
+//    25% {
+//        -webkit-transform: scale(0.1);
+//        opacity: 0.1;
+//    }
+//    50% {
+//        -webkit-transform: scale(0.5);
+//        opacity: 0.3;
+//    }
+//    75% {
+//        -webkit-transform: scale(0.8);
+//        opacity: 0.5;
+//    }
+//    100% {
+//        -webkit-transform: scale(1);
+//        opacity: 0.0;
+//    }
+//}
+
+
+
+
+
+
+
+/*******************
+File Upload
+******************/
+
+//.fileupload {
+//    overflow: hidden;
+//    position: relative;
+//    input.upload {
+//        cursor: pointer;
+//        filter: alpha(opacity=0);
+//        font-size: 20px;
+//        margin: 0;
+//        opacity: 0;
+//        padding: 0;
+//        position: absolute;
+//        right: 0;
+//        top: 0;
+//    }
+//}
+
+
+
+/*******************
+List-style-none
+******************/
+
+ul.list-style-none {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+        a {
+            padding: 8px 0;
+            display: block;
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+/*******************
+Form-control
+******************/
+
+.form-control {
+    min-height: 38px;
+    display: initial;
+}
+
+.form-control-sm {
+    min-height: 20px;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    opacity: 0.7;
+}
+
+.custom-control-input:focus~.custom-control-indicator {
+    box-shadow: none;
+}
+
+form label {
+    font-weight: 400;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-horizontal label {
+    margin-bottom: 0;
+}
+
+.form-control-static {
+    padding-top: 0;
+}
+
+.form-bordered .form-group {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+/*******************
+Layouts
+******************/
+
+
+/*Card-no-borders*/
+
+.card-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    overflow: auto;
+}
+
+
+
+
+
+
+/*******************/
+
+
+/*widgets -app*/
+
+
+/*******************/
+
+.css-bar:after {
+    z-index: 1;
+}
+
+.css-bar>i {
+    z-index: 10;
+}
+
+
+
+
+
+/*******************/
+
+
+/*single column*/
+
+
+/*******************/
+
+.single-column {
+    .left-sidebar {
+        display: none;
+    }
+    .page-wrapper {
+        margin-left: 0;
+    }
+}
+
+.fix-width {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/*******************/
+
+
+/*card-default*/
+
+
+/*******************/
+
+.card-default {
+    .card-header {
+        border-bottom: 0;
+    }
+}

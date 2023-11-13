@@ -1,0 +1,63 @@
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// **Be sure that you only ever include this mixin once!**
+@include mat-core();
+
+// Define the theme.
+// params: $base-palette, $default, $lighter, $darker
+$amitec-blue-primary: mat-palette($mat-light-blue, A700, A600, A800);
+$amitec-blue-accent:  mat-palette($mat-light-green);
+$amitec-blue-theme:   mat-light-theme($amitec-blue-primary, $amitec-blue-accent);
+
+// Include the theme styles for only specified components.
+@include mat-core-theme($amitec-blue-theme);
+//@include mat-autocomplete-theme($amitec-blue-theme);
+@include mat-button-theme($amitec-blue-theme);
+//@include mat-button-toggle-theme($amitec-blue-theme);
+//@include mat-card-theme($amitec-blue-theme);
+//@include mat-checkbox-theme($amitec-blue-theme);
+//@include mat-chips-theme($amitec-blue-theme);
+//@include mat-table-theme($amitec-blue-theme);
+@include mat-datepicker-theme($amitec-blue-theme);
+//@include mat-dialog-theme($amitec-blue-theme);
+//@include mat-divider-theme($amitec-blue-theme);
+//@include mat-expansion-panel-theme($amitec-blue-theme);
+//@include mat-form-field-theme($amitec-blue-theme);
+//@include mat-grid-list-theme($amitec-blue-theme);
+//@include mat-icon-theme($amitec-blue-theme);
+//@include mat-input-theme($amitec-blue-theme);
+//@include mat-list-theme($amitec-blue-theme);
+@include mat-menu-theme($amitec-blue-theme);
+//@include mat-paginator-theme($amitec-blue-theme);
+//@include mat-progress-bar-theme($amitec-blue-theme);
+//@include mat-progress-spinner-theme($amitec-blue-theme);
+//@include mat-radio-theme($amitec-blue-theme);
+//@include mat-select-theme($amitec-blue-theme);
+//@include mat-sidenav-theme($amitec-blue-theme);
+//@include mat-slide-toggle-theme($amitec-blue-theme);
+//@include mat-slider-theme($amitec-blue-theme);
+//@include mat-stepper-theme($amitec-blue-theme);
+//@include mat-tabs-theme($amitec-blue-theme);
+//@include mat-toolbar-theme($amitec-blue-theme);
+//@include mat-tooltip-theme($amitec-blue-theme);
+//@include mat-snack-bar-theme($amitec-blue-theme);
+
+
+
+
+// Define an alternate dark theme.
+//$amitec-dark-primary: mat-palette($mat-blue-grey);
+//$amitec-dark-accent:  mat-palette($mat-amber, A200, A100, A400);
+//$amitec-dark-warn:    mat-palette($mat-deep-orange);
+//$amitec-dark-theme:   mat-dark-theme($amitec-dark-primary, $amitec-dark-accent);
+
+// Include the alternative theme styles inside of a block with a CSS class. You can make this
+// CSS class whatever you want. In this example, any component inside of an element with
+// `.amitec-dark-theme` will be affected by this alternate dark theme instead of the default theme.
+//.amitec-dark-theme {
+//    @include mat-core-theme($amitec-dark-theme);
+//    @include mat-button-theme($amitec-dark-theme);
+//}
