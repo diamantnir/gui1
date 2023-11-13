@@ -1,0 +1,6 @@
+*****  Problem ng serve 'node-sass'   ********* Balaban Noah , 31 March 2019
+*===================================================================*
+*** Problem: cousing errors compiling .scss files to .css which gives :
+    ERROR .... Module build failed: Error: Cannot find module 'node-sass' 
+*** Solution: Looks like you're missing node-sass in your project. 
+    Try installing it through   'npm i node-sass -D' and rerun again.
